@@ -1917,14 +1917,14 @@ h3 span{
   color: white;
   font-weight: 300;
   position: absolute;
-  left: 20px;
-  top: 15px;
+  left: 20%;
+  top: 35%;
   font-family: 'Open Sans', sans-serif;
 }
 
 .bar {
   position: absolute;
-  top: 100px;
+  top: 55%;
   left:10%;
   height: 5px;
   width: 80%;
@@ -2054,7 +2054,7 @@ svg {
   border-radius:10px
 }
 .card-p{
-  font-size:85%
+  font-size:70%
 }
 .card .front{
   background:#17141d;
@@ -2079,17 +2079,18 @@ h3 span{
 }
 
 .title {
+  
   color: white;
   font-weight: 300;
   position: absolute;
   left: 20px;
-  top: 15px;
+  top: 30%;
   font-family: 'Open Sans', sans-serif;
 }
 
 .bar {
   position: absolute;
-  top: 100px;
+  top: 50%;
   left:10%;
   height: 5px;
   width: 80%;
@@ -2196,5 +2197,18 @@ svg {
   .cardBox-prize{
     width:70%;
   margin:3% 15%
+  }
+  .imgtexts{
+    display:none;
+  }
+  .imgs{
+    display:none;
+  }
+  .fa-logo{
+    position:relative;
+    left:-20px;
+  }
+  .filledbar{
+    display:none;
   }
 }
