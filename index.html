@@ -19,7 +19,7 @@
   <nav id="mainNavbar" class="navbar navbar-default navbar-fixed-top scrolled">
     <div class="navbar1">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" style="margin-right:30px;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -33,9 +33,8 @@
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#port">SCHEDULE</a></li>
-
-          <li><a href="#service">THEMES</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#service">PRIZES</a></li>
+          <li><a href="#faq">FAQs</a></li>
 
           <li><a href="#contact">CONTACT</a></li>
 
@@ -45,7 +44,7 @@
     </div>
   </nav>
 
-
+      
 <!-- banner-area -->
   
 
@@ -59,7 +58,7 @@
                 <h1  class="heading-main">LOCK-A-THON</h1>
                 <p>HACKATHON BY TEAM PRATYUNMIS</p>
                 <hr>
-                <button class="btn btn-default btn-lg"><i class="fas fa-user-plus"></i> REGISTER</button>
+                <button class="btn btn-default btn-lg" id="regBtn"><i class="fas fa-user-plus"></i> REGISTER</button>
               </div>
           
             </div>
@@ -89,7 +88,7 @@
       </div>
       <div class="container about">
         <div class="row">
-          <div class="col-lg-6 pink" >hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers, tech-geeks and newbies in the world of programming for the intensive development of a hack. At hackCBS 2.0, we want to help you turn your ideas into reality. These ideas can generally be in the form of websites, applications, projects or posters. You’ll have all the freedom to create a product, learn new techniques for your future, or just have fun working on a project with friends. Moreover, we’ll offer you a chance to network with other creators & professionals. You will never learn faster than you will at a hackathon.From basic app building to making your own IoT device,</div>
+          <div class="col-lg-6 pink">hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers, tech-geeks and newbies in the world of programming for the intensive development of a hack. At hackCBS 2.0, we want to help you turn your ideas into reality. These ideas can generally be in the form of websites, applications, projects or posters. You’ll have all the freedom to create a product, learn new techniques for your future, or just have fun working on a project with friends. Moreover, we’ll offer you a chance to network with other creators & professionals. You will never learn faster than you will at a hackathon.From basic app building to making your own IoT device,</div>
             
           <div class="col-lg-6 pink">hackCBS 2.0 will have it all. If you haven’t participated in any hackathon before and if you’re looking out for the opportunity to do so, you’re in the right place. We welcome all newcomers and veterans alike. You are about to witness a series of events which will enlighten as well as enhance your CS skills. Our previous edition hackCBS witnessed a grand footfall of over 100 teams, fighting it all out to their position at the top while generating over 15,000 lines of code in the process of 24 hours, requiring more than 3000 cups of coffee to fuel the developers’ brains (Coffee’s on the house). But this time it’s gonna be different, ‘coz this time it’s going to be even grander.</div>
           
@@ -115,7 +114,12 @@
   </div>
 </div>
 
+
+
 <!-- schedule-area -->
+
+
+
 <div class="port-area" id="port">
   <div class="bgimg-2">
     <div class="caption">
@@ -135,20 +139,18 @@
               <div class="emptybar"></div>
               <div class="filledbar"></div>
             </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle class="stroke" cx="60" cy="60" r="50"/>
-              </svg>
-          </div>
           </div>
           <div class="back">
             <h3>Description</h3>
-            <div class="bar">
+            <!-- <div class="bar">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
+            </div> -->
+            <div class="card-p">
+              <li>Participants are required to form a team of 2-4 members and submit their idea on which they would like to work. </li>
+              <li>They also need to point out the impact of their solution.</li>
             </div>
-            <p>Content </p>
-            <a href="#">Button 1</a>
+            
           </div>
         </div>
       </div>
@@ -161,20 +163,15 @@
               <div class="emptybar"></div>
               <div class="filledbar"></div>
             </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle class="stroke" cx="60" cy="60" r="50"/>
-              </svg>
-          </div>
+            
           </div>
           <div class="back">
             <h3>Description</h3>
-            <div class="bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
+            <div class="card-p">
+              <li>Teams would would be selected for the next round based upon their ideas.</li>
+            <li>Teams selected would be given 7 days of time to build their prototype , share a video of their demonstration and share their github link to the project.</li> 
             </div>
-            <p>Content </p>
-            <a href="#">Button 1</a>
+            
           </div>
         </div>
       </div>
@@ -187,49 +184,24 @@
               <div class="emptybar"></div>
               <div class="filledbar"></div>
             </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle class="stroke" cx="60" cy="60" r="50"/>
-              </svg>
-          </div>
+            
           </div>
           <div class="back">
             <h3>Description</h3>
-            <div class="bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
+            <div class="card-p">
+              <li> Teams showing extra ordinary performances would be selected for the final round. </li>
+              <li>They would have to present their projects through online mode to a panel of judges who would grade them.</li>
+              <li> Top 3 performers would be selected by the judges.</li>
             </div>
-            <p>Content </p>
-            <a href="#">Button 1</a>
+              
+            </div>
+            
+            
           </div>
         </div>
       </div>
 
-       <div class="cardBox">
-        <div class="card">
-          <div class="front">
-            <h3 class="title">ROUND-4</h3>
-            <div class="bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
-            </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <circle class="stroke" cx="60" cy="60" r="50"/>
-              </svg>
-          </div>
-          </div>
-          <div class="back">
-            <h3>Description</h3>
-            <div class="bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
-            </div>
-            <p>Content </p>
-            <a href="#">Button 1</a>
-          </div>
-        </div>
-      </div>
+       
 
     </div>
 </div>
@@ -237,103 +209,70 @@
 
 
 
-<!-- themes-area -->
+<!-- prize-area -->
 
 
 
 <div class="service-area" id="service">
   <div class="bgimg-3">
-    <div class="caption">
-      <span class="headings2">THEMES</span>
-    </div>
-  </div>
-  <!-- <div class="bgimg-3">
-    <div class="caption">
-      <div class="bg-theme">
-        <h1 class="headings2">THEMES</h1>
-      </div>
-    
+   <div class="prize-h">
+     <h2 class="headings-p" style="text-align:center;color:white;font-weight:600;">PRIZES</h2>
+     <hr class="headings-p">
    </div>
-  </div> -->
 
-  <div style="position:relative;" class="themes-main">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-        
-
-        <div class="container">
-          <div class="row height">
-            <div class="col-lg-4 col-md-4 col-sm-4 scaling">
-              <div class="thumbnail">
-                <img  src="https://source.unsplash.com/2EJCSULRwC8">
-                <div class="text-block">
-                <h4>ROBOTICS</h4>
-                
-              </div>
-              </div>
+   <div class="container-prizes">
+     <div class="cardBox-prize">
+        <div class="card-prize">
+          <div class="front">
+            <h3 class="title-prize">winner</h3>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 scaling">
-              <div class="thumbnail">
-                <img src="https://source.unsplash.com/8FxJi5wuwKc">
-                <div class="text-block">
-                <h4>SECURITY AND SURVILLIEANCE</h4>
-                
-              </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 scaling">
-              <div class="thumbnail">
-                <img src="https://source.unsplash.com/KtYvqysesC4">
-                <div class="text-block">
-                <h4>HEALTHCARE</h4>
-                
-              </div>
-              </div>
-            </div>
+            
           </div>
-          <div class="row height">
-            <div class="col-lg-4 col-md-4 col-sm-4 scaling">
-              <div class="thumbnail">
-                <img  src="https://source.unsplash.com/anapPhJFRhM">
-                <div class="text-block">
-                <h4>IOT-TECH</h4>
-                
-              </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 scaling">
-              <div class="thumbnail">
-                <img src="https://source.unsplash.com/gUIJ0YszPig">
-                <div class="text-block">
-                <h4>SMART COMMUNICATION</h4>
-                
-              </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 scaling">
-              <div class="thumbnail">
-                <img src="https://source.unsplash.com/H4ClLKv3pqw">
-                <div class="text-block">
-                <h4>MISCELLANEOUS</h4>
-                
-              </div>
-              </div>
-            </div>
-          </div>
+      
         </div>
+      </div>
 
-    </div>
+      <div class="cardBox-prize">
+        <div class="card-prize">
+          <div class="front">
+            <h3 class="title-prize">runner-up</h3>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            
+          </div>
+      
+        </div>
+      </div>
+
+
+      <div class="cardBox-prize">
+        <div class="card-prize">
+          <div class="front">
+            <h3 class="title-prize">best-mech hack</h3>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            
+          </div>
+      
+        </div>
+      </div>
+   </div>
   </div>
-
-  <!-- <div class="psbutton">
-    <button class="btnps "><a href="#" class="diflink">Problem Statements</a></button>
-  </div> -->
+  </div>  
 </div>
 
 <div class="faq-area" id="faq">
   <section class="faq-section">
     <div class="faq-heading">
       <h2 class="headings" style="text-align: center;">
-        FAQ
+        FAQs
       </h2>
       <hr class="headings">
     </div>
@@ -342,52 +281,46 @@
         <div class="col-lg-6 col-sm-6">
           <ul id="faq-list">
                     <li>
-                        <a data-toggle="collapse" class="collapsed" href="#faq1" aria-expanded="false">1. Do you have a particular theme
-                            for the Hackathon? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" class="collapsed" href="#faq1" aria-expanded="false">1. What is Lock-A-Thon? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq1" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height: 0px;">
                             <p>
-                                No. The Hackathon is open. You can use any technology to build your hacks.
+                                Lock-a-thon is an amazing opportunity to receive help in your project from mentors in a vast array of fields, and win prizes. It is an event which promotes new talents and sharpens existing ones.
                             </p>
                         </div>
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq2" class="collapsed" aria-expanded="false">2. Are there any registration
-                            charges? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq2" class="collapsed" aria-expanded="false">2.How much does it cost? 
+                            <i class="fa fa-minus-circle"></i></a>
                         <div id="faq2" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height: 0px;">
                             <p>
-                                No. Registrations are completely free of cost.
+                               Lock-A-Thon is absolutely free. Any BIT student with a knack of coding and developing can participate in Lock-A-Thon.
                             </p>
                         </div>
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq3" class="" aria-expanded="true">3. Do you provide accommodation and
-                            fooding? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq3" class="" aria-expanded="true">3.What if I don't know how to code? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq3" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height:0px;">
                             <p>
-                                Yes. Each team member will be provided with accommodation and fooding during the
-                                Hackathon. You don't need to pay a single penny. That's on us.
+                                That is not a problem. A great way to learn how to code is by attending such events. Lock-A-Thon is an event for like-minded people where they share interests, and explore their passions, whether it is Coding, Electronics or anything else, you never know what you might pick up!!
                             </p>
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#faq4" class="collapsed" aria-expanded="false">4. Do you provide travel reimbursements
-                            ? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq4" class="collapsed" aria-expanded="false">4. Who is Lock-A-Thon for?<i class="fa fa-minus-circle"></i></a>
                         <div id="faq4" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height: 0px;">
                             <p>
-                                Yes
+                                Lock-A-Thon is only for students from BIT Mesra, who belongs to either k18 or, k19 batch.
                             </p>
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#faq5" class="collapsed">5. When and how will I receive
-                            travel reimbursement? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq5" class="collapsed">5. Do you have a particular theme
+                            for the Lock-a-thon? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq5" class="collapse" data-parent="#faq-list">
                             <p>
-                                You will have to provide your travel itinerary and bank account details at the
-                                onsite registration desk. You will receive the reimbursement amount after the completion
-                                of the event as per rule.
+                                No. The Lock-a-thon is open. You can use any technology to build your hacks.
                             </p>
                         </div>
                     </li>
@@ -413,18 +346,18 @@
         <div class="col-lg-6 col-sm-6">
          <ul id="faq-list">
                     <li>
-                        <a data-toggle="collapse" class="collapsed" href="#faq1" aria-expanded="false">1. Do you have a particular theme
-                            for the Hackathon? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" class="collapsed" href="#faq1" aria-expanded="false">7. I don't have an original idea.
+                            Can I still participate?  <i class="fa fa-minus-circle"></i></a>
                         <div id="faq1" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height: 0px;">
                             <p>
-                                No. The Hackathon is open. You can use any technology to build your hacks.
+                                Yes. Not every idea needs to be unique. Sometimes you may do it better than
+                                existent. You can also improve existing products.
                             </p>
                         </div>
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq2" class="collapsed" aria-expanded="false">2. Are there any registration
-                            charges? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq2" class="collapsed" aria-expanded="false">8.Is the selection per member or per-team basis?<i class="fa fa-minus-circle"></i></a>
                         <div id="faq2" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height: 0px;">
                             <p>
                                 No. Registrations are completely free of cost.
@@ -433,7 +366,7 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq3" class="collapsed" aria-expanded="false">3. Do you provide accommodation and
+                        <a data-toggle="collapse" href="#faq3" class="collapsed" aria-expanded="false">9. Do you provide accommodation and
                             fooding? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq3" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height:0px;">
                             <p>
@@ -443,8 +376,7 @@
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#faq4" class="collapsed" aria-expanded="false">4. Do you provide travel reimbursements
-                            ? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq4" class="collapsed" aria-expanded="false">10.Do we get any certificate for participation? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq4" class="collapse" data-parent="#faq-list" aria-expanded="false" style="height: 0px;">
                             <p>
                                 Yes
@@ -452,7 +384,7 @@
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#faq5" class="collapsed">5. When and how will I receive
+                        <a data-toggle="collapse" href="#faq5" class="collapsed">11. When and how will I receive
                             travel reimbursement? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq5" class="collapse" data-parent="#faq-list">
                             <p>
@@ -464,13 +396,10 @@
                     </li>
 
                     <li>
-                        <a data-toggle="collapse" href="#faq6" class="collapsed">6. What is the criteria of
-                            selection? <i class="fa fa-minus-circle"></i></a>
+                        <a data-toggle="collapse" href="#faq6" class="collapsed">12. Error 404 quaestion not found? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq6" class="collapse" data-parent="#faq-list">
                             <p>
-                                You will be judged on the quality of your idea. The idea is only a part of the
-                                judgement. The skills of your team members would play a major role in your
-                                selection.
+                                You can contact us at <a href="#">pratyunmis@bitmesra.ac.in</a>
                             </p>
                         </div>
                     </li>
@@ -549,11 +478,12 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/neww.js"></script>
     <script type="text/javascript" src="js/aos.js"></script>
-    <script type="text/javascript">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+   <!--  <script type="text/javascript">
       AOS.init({
         duration:1500,
       });
-    </script>
+    </script> -->
     <script>
       $(function () {
       $(document).scroll(function () {
@@ -561,6 +491,9 @@
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
       });
+    </script>
+    <script type="text/javascript">
+        ScrollOut();
     </script>
 
 
