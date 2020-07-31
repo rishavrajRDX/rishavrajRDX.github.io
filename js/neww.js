@@ -31,7 +31,13 @@
 
 
 
+// window.addEventListener("load",function(){
+//   var load_screen=document.querySelector(".load-screen");
+//   document.body.removChild(load_screen);
+// })
+
 window.addEventListener("load",function(){
-  var load_screen=document.querySelector(".load-screen");
-  document.body.removChild(load_screen);
+  console.log("loaded");
+  var load_screen=document.querySelector(".preloader");
+  document.body.removeChild(load_screen);
 })

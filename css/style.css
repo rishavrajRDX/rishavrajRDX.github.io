@@ -448,6 +448,19 @@ h3 {
 }
 
 /*about-area*/
+
+.about-area{
+ /* overflow-x: hidden;*/
+}
+
+.ab-content1 .ab-content2{
+  font-size:100%;
+  color:black;
+}
+.ab-content1 span{
+  text-align: center;
+  display: block;
+}
 .about{
   font-family: Montserrat,sans-serif;
     font-size: 1.6rem;
@@ -465,7 +478,7 @@ h3 {
   
 }
 .about-content{
-  color: #777;
+  color: black;
   background-color:white;
   text-align:center;
   padding:50px 80px;
@@ -558,7 +571,7 @@ h3 {
   }
 
   .about-content{
-    color: #777;
+    color: black;
     background-color:white;
     text-align:center;
     padding:40px 30px;
@@ -769,7 +782,7 @@ h3 {
 .navbar-fixed-top.scrolled {
   background-color: #112d32 !important;
   opacity:0.8;
-  transition: background-color 200ms linear;
+  transition: background-color 400ms linear;
 }
 #mainNavbar.scrolled{
   opacity:0.9;
@@ -1209,7 +1222,7 @@ svg {
 .dates span{
   color:orange;
   position:relative;
-  top:200px;
+  top:170px;
   font-size:80%;
   font-weight:550;
   text-align:start;
@@ -1373,7 +1386,7 @@ h3 span{
   color:orange;
   position:relative;
   top:155px;
-  font-size:70%;
+  font-size:80%;
   font-weight:530;
   text-align:start;
   padding-left:9%;
@@ -1692,7 +1705,8 @@ svg {
 .cardBox1 {
   float: left;
   font-size: 1.2em;
-  margin: 1% 0 0 1%;
+  margin:1% 0 0 1%;
+  padding:20px;
   perspective: 800px;
   transition: all 0.3s ease 0s;
   width: 30.3%;
@@ -1710,7 +1724,7 @@ svg {
   height: 300px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0s;
-  width: 100%;
+  width: 90%;
   border-radius:10px;
   box-shadow: -1rem 0 3rem #000;
   -webkit-animation: giro 1s 1;
@@ -1886,7 +1900,7 @@ svg {
   .cardBox {
   float: left;
   font-size: 1.2em;
-  margin:3% 15%;
+  margin:03% 15%;
   padding-bottom:20px;
   perspective: 800px;
   transition: all 0.3s ease 0s;
@@ -1902,10 +1916,10 @@ svg {
 .card {
   background: #222;
   cursor: crosshair;
-  height: 350px;
+  height: 320px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0s;
-  width: 100%;
+  width: 90%;
   border-radius:10px;
   box-shadow: -1rem 0 3rem #000;
   -webkit-animation: giro 1s 1;
@@ -2139,6 +2153,7 @@ h3 span{
   position: absolute;
   left: 20px;
   top: 30%;
+  font-size:120%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -2247,13 +2262,18 @@ svg {
 /*media*/
 @media (max-width:768px){
   .bgimg-3{
-    min-height: 1400px;
+    min-height: 1450px;
   }
   .cardBox-prize{
-    width:60%;
-    margin:2% 20%;
+    width:50%;
+    margin:2% 25%;
     position:relative;
     top:20px
+  }
+  .prize-img{
+    top:30px;
+  width:70%;
+
   }
 }
 
@@ -2385,3 +2405,116 @@ svg {
 
 /*preloader*/
 
+.preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:999999;
+  background:black;
+}
+.preloader__wrapper {
+  margin:-50px 0 0 -50px;
+}
+.preloader__dots,
+.preloader__wrapper {
+  position:absolute;
+  top:50%;
+  left:50%;
+  background-color:transparent;
+}
+.preloader__wrapper {
+  width:100px;
+  height:100px;
+  overflow:hidden;
+  border-radius:100%;
+  -webkit-transform:translate3d(-50%,-50%,0);
+  transform:translate3d(-50%,-50%,0);
+}
+.preloader__dots {
+  display:block;
+  width:36px;
+  height:36px;
+  margin:-18px 0 0 -18px;
+  animation:1s linear infinite rotate;
+}
+.preloader__dot,
+.preloader__dot:after,
+.preloader__dot:before {
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  background-color:#fff;
+}
+.preloader__dot {
+  left:0;
+  bottom:0
+}
+.preloader__dot:after,
+.preloader__dot:before {
+  content:'';
+  display:block;
+}
+.preloader__dot:after {
+  top:-25px;
+  right:0;
+  animation:1s linear infinite down;
+}
+.preloader__dot:before {
+  right:-25px;
+  bottom:0;
+}
+
+@keyframes rotate {
+  0% {
+    transform:rotate(0);
+    -webkit-transform:rotate(0deg);
+  }
+  100%,50% {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+  }
+}
+
+@-webkit-keyframes  rotate {
+  0% {
+    transform:rotate(0);
+    -webkit-transform:rotate(90deg);
+  }
+  100%,50% {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  50% {
+    transform: translate3d(0,0,0)  scaleX(1);
+  }
+  75% {
+    transform: translate3d(0,0,0) scaleX(1.3)
+  }
+  100% {
+    transform: translate3d(25px,0,0) scaleX(1.3);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  50% {
+    transform: translate3d(0,0,0)  scaleX(1);
+  }
+  75% {
+    transform: translate3d(0,0,0) scaleX(1.3);
+  }
+  100% {
+    transform: translate3d(25px,0,0) scaleX(1.3);
+  }
+}
