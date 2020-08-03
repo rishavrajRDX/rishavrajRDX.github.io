@@ -6,9 +6,8 @@
 
   <title>trial-thon</title>
 
-  
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- -->  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/aos.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -44,7 +43,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-        <a href="#" class="navbar-brand logo">LOCK-A-THON</a>
+        <a href="#" class="navbar-brand logo">LOCK<i class="fab fa-autoprefixer nav-logo"></i>THON</a>
       </div>
      
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,7 +59,6 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="guidelines/guidelines.pdf" style="margin-right:60px;margin-top:-6px;"><i class="far fa-sticky-note icons"></i>GUIDELINES</a></li>
-          <!-- <li><a href="#register"  style="margin-right:60px;"><i class="fas fa-user-plus icons"></i>REGISTER</a></li> -->
         </ul>
 
 
@@ -79,11 +77,19 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
+               <img class="robolution-logo" src="imgs/robolutionlogo.png">
               <div class="contain">
-                <h1  class="heading-main">LOCK-A-THON</h1>
+                <div class="logo-img">
+                 
+                </div>
+                
+                <div class="banner-headings">
+                  <h1  class="heading-main">LOCK-A-THON</h1>
                 <p class="caption-b">BUILD-LOCK-ACHIEVE</p>
                 <hr>
                 <a target="_blank"href="https://docs.google.com/forms/d/12gPf2WXxAipHYCkWEOchnEUm7cdaVjUFYCoKw7J0COA/edit?ts=5f225b0b"><button class="glow-on-hover reg-btn" type="button">REGISTER</button></a>
+                </div>
+                
               </div>
           
             </div>
@@ -94,9 +100,13 @@
     
   </div>
 
+<!-- to-top-btn -->
+
+<a class="top-link hide" href="" id="js-top">
   
-<!-- <a href='https://www.freepik.com/photos/technology'>Technology photo created by kjpargeter - www.freepik.com</a>
- --><!-- about-area -->
+  <i class="fab fa-autoprefixer top-btn fa-lg"></i>
+</a>
+<!-- about-area -->
 
 
 <div class="about-area" id="about">
@@ -268,9 +278,13 @@
         <div class="card-prize">
           <div class="front" style="text-align:center;">
             <img src="imgs/first.png" class="prize-img">
-            <button class="glow-on-hover prize-btn" type="button">WINNER</button>
+            
+            <button class="glow-on-hover prize-btn" id="p-btn1" type="button">WINNER</button>
             
           </div>
+          <div class="prize-value">
+                <h3>prizes worth <span> <i class="fas fa-rupee-sign"></i>5000</span></h3>
+           </div>
       
         </div>
       </div>
@@ -279,10 +293,14 @@
         <div class="card-prize">
           <div class="front" style="text-align: center;">
               <img src="imgs/second.png" class="prize-img">
-
-            <button class="glow-on-hover prize-btn" type="button" >RUNNER-UP</button>
+              
+            <button class="glow-on-hover prize-btn" id="p-btn2" type="button" >RUNNER-UP</button>
             
           </div>
+          <div class="prize-value">
+                <h3>prizes worth <span> <i class="fas fa-rupee-sign"></i> 2500</span></h3>
+          </div>
+
       
         </div>
       </div>
@@ -292,9 +310,13 @@
         <div class="card-prize">
           <div class="front" style="text-align: center;">
               <img src="imgs/third.png" class="prize-img">
+              
 
-            <button class="glow-on-hover prize-btn" type="button">BEST MECH-HACK</button>
+            <button class="glow-on-hover prize-btn" id="p-btn3" type="button">BEST MECH-HACK</button>
             
+          </div>
+          <div class="prize-value">
+                <h3>prizes worth <span> <i class="fas fa-rupee-sign"></i> 2500</span></h3>
           </div>
       
         </div>
@@ -331,6 +353,30 @@
   </section>
 </div>
 
+
+
+<!-- sponsors-area -->
+
+<!-- <div class="sponsors-area" id="sponsors">
+  <section class="sponsors-section">
+    <div class="sponsors-heading">
+      <h2 class="headings wow bounceInUp" style="text-align: center;">
+        OUR SPONSORS
+      </h2>
+      <hr class="headings">
+      <hr class="headings" style="margin-top:-15px;">
+
+      <div class="sponsors-contain">
+        For this event we would like to declare "Prayog India" as our Robitics Supply Partner. They have been our trusted source for purchasing various robotics hardware including application boards, sensors, motors, power supplies, electronic components, and other tools at reasonable prices. We are thankful for their support in this event!
+        Check out "Prayog India" for all your needs to build your own robotics project. Their contact details are:
+
+        http://www.prayogindia.in
+        +91 8409498926
+      </div>
+      
+    </div>
+  </section>
+</div> -->
 
 <!-- faq-area -->
 
@@ -461,7 +507,7 @@
                         <a data-toggle="collapse" href="#faq12" class="collapsed">12. Error 404 question not found? <i class="fa fa-minus-circle"></i></a>
                         <div id="faq12" class="collapse" data-parent="#faq-list">
                             <p>
-                                You can contact us at <a target="_blank" href="https://mail.google.com/mail/u/0/#search/pratyunmis%40bitmesra.ac.in?compose=GTvVlcRzCMfZWzmRBjQtMcpgGDCHddnnQZzpZqBdglDRFNsVNZCPGwwZZGQvNHmTsjTPkkBCCgKsz">pratyunmis@bitmesra.ac.in</a>
+                                You can contact us at <a target="_blank" href="https://wa.me/message/X7ETPZWQ5QRRG1"><i class="fab fa-whatsapp fa-lg icons"></i>WHATSAPP</a>
                             </p>
                         </div>
                     </li>
@@ -476,6 +522,9 @@
     </div>
   </section>
 </div>
+
+
+<!-- contacts-area -->
 
 <div class="contact-area" id="contact">
   <section class="footer-section">
