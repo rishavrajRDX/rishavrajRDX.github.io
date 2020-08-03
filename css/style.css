@@ -653,9 +653,70 @@ h3 {
 
 
 /*sponsors area*/
+.sponsors-area{
+ /* height:500px;*/
+  width:100%;
+  position: relative;
+  top:-600px;
+  background: #192841;
+  text-align: ;
+}
+.sponsors-heading{
+  position: relative;
+  top:30px;
+}
 
 
+.sponsors-container{
+  margin-top:4%;
+}
+.prayog-heading{
+  text-align: start;
+  margin-left:10%;
+  font-size:40px;
+  position: relative;
+  padding:20px;
+  top:30px;
+  border-left:5px solid orange;
 
+}
+
+.sponors-img{
+  height:200px;
+  width:80%;
+}
+.prayog-content{
+  font-size: 110%;
+  font-weight:550;
+}
+.prayog-content span{
+  display: block;
+}
+.prayog-conntact{
+  font-size:130%;
+}
+
+@media(max-width:480px){
+  .prayog-heading{
+  text-align: start;
+  margin-left:10%;
+  font-size:40px;
+  position: relative;
+  padding:10px;
+  top:30px;
+  border-left:5px solid orange;
+
+}
+
+.sponors-img{
+display: none;
+}
+.prayog-content{
+  font-size: 110%;
+  font-weight:500;
+  margin-left:10%;
+}
+}
 
 
 /*contact-area*/
@@ -1792,7 +1853,7 @@ svg {
 /*faq-area*/
 .faq-area{
   background:rgb(17, 85, 67);
-  margin-top:-700px;
+  margin-top:100px;
   overflow-x: hidden;
 }
 
