@@ -658,7 +658,7 @@ h3 {
   width:100%;
   position: relative;
   top:-600px;
-  background: #192841;
+  background: #1d2951;
   text-align: ;
 }
 .sponsors-heading{
@@ -797,6 +797,7 @@ display: none;
 }
 .icons:hover{
   transform: scale(1.3);
+  -webkit-transform: scale(1.3);
 }
 @media (max-width:480px){
   .icons{
@@ -1105,19 +1106,23 @@ margin:8px 1px 4px 4px;
 
 .cardBox:nth-child(1):hover .card {
   transform: rotate3d(-1, 1, 0, 180deg);
+  -webkit-transform: rotate3d(-1, 1, 0, 180deg);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .cardBox:nth-child(2):hover .card {
   transform: rotate3d(1, -1, 0, 180deg);
+  -webkit-transform: rotate3d(1, -1, 0, 180deg);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .cardBox:nth-child(3):hover .card {
   transform: rotate3d(-1, 1, 0, 180deg);
+  -webkit-transform: rotate3d(-1, 1, 0, 180deg);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .cardBox:nth-child(4):hover .card {
   transform: rotate3d(1, -1, 0, 180deg);
+  -webkit-transform: rotate3d(1, -1, 0, 180deg);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -1199,15 +1204,20 @@ h3 span{
 }
 .card:nth-child(1) .back {
   transform: rotate3d(-1, 1, 0, 180deg);
+  -webkit-transform: rotate3d(-1, 1, 0, 180deg);
 }
 .card:nth-child(2) .back {
   transform: rotate3d(1, -1, 0, 180deg);
+  -webkit-transform: rotate3d(1, -1, 0, 180deg);
+}
 }
 .card:nth-child(3) .back {
   transform: rotate3d(-1, 1, 0, 180deg);
+  -webkit-transform: rotate3d(-1, 1, 0, 180deg);
 }
 .card:nth-child(4) .back {
   transform: rotate3d(1, -1, 0, 180deg);
+  -webkit-transform: rotate3d(1, -1, 0, 180deg);
 }
 .card .back a {
   padding: 0.3em 0.5em;
@@ -1434,6 +1444,7 @@ h3 span{
 }
 .card .back {
   transform: rotateY( 180deg);
+  -webkit-transform: rotateY( 180deg);
 }
 
 .card .back a {
@@ -1597,6 +1608,7 @@ h3 span{
 }
 .card .back {
   transform: rotateY( 180deg);
+  -webkit-transform: rotateY( 180deg);
 }
 
 .card .back a {
@@ -1677,6 +1689,7 @@ h3 span{
 
 .cardBox:hover .card {
   transform: rotateY( 180deg);
+  -webkit-transform: rotateY( 180deg);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -1739,6 +1752,7 @@ h3 span{
 }
 .card .back {
   transform: rotateY( 180deg);
+  -webkit-transform: rotateY( 180deg);
 }
 
 .card .back a {
@@ -2074,15 +2088,19 @@ h3 span{
 }
 .card:nth-child(1) .back {
   transform: rotate3d(-1, 1, 0, 180deg);
+  -webkit-transform: rotate3d(-1, 1, 0, 180deg);
 }
 .card:nth-child(2) .back {
   transform: rotate3d(1, -1, 0, 180deg);
+  -webkit-transform: rotate3d(1, -1, 0, 180deg);
 }
 .card:nth-child(3) .back {
   transform: rotate3d(-1, 1, 0, 180deg);
+  -webkit-transform: rotate3d(-1, 1, 0, 180deg);
 }
 .card:nth-child(4) .back {
   transform: rotate3d(1, -1, 0, 180deg);
+  -webkit-transform: rotate3d(1, -1, 0, 180deg);
 }
 .card .back a {
   padding: 0.3em 0.5em;
@@ -2187,18 +2205,25 @@ svg {
 @-webkit-keyframes giro {
   from {
     transform: rotateY( 180deg);
+    -webkit-transform: rotateY( 180deg);
   }
   to {
     transform: rotateY( 0deg);
+        -webkit-transform: rotateY(0deg);
+
   }
 }
 
 @keyframes giro {
   from {
     transform: rotateY( 180deg);
+        -webkit-transform: rotateY( 180deg);
+
   }
   to {
     transform: rotateY( 0deg);
+        -webkit-transform: rotateY(0deg);
+
   }
 }
 
@@ -2289,6 +2314,8 @@ h3 span{
 }
 .card .back {
   transform: rotateY( 180deg);
+  -webkit-transform: rotateY( 180deg);
+
 }
 
 .card .back a {
@@ -2565,6 +2592,11 @@ svg {
   margin-top:60px;
   width:80%;
 }
+
+.prize-btn3{
+  margin-top:100px;
+  width:80%;
+}
 .prize-value{
   display: none;
   position:relative;
@@ -2584,6 +2616,18 @@ svg {
   position:relative;
   top:40px;
   width:80%;
+  display: block;
+  text-align: center;
+  margin:0 auto;
+/*   height:80%; */
+}
+.prize-img3{
+
+  position:relative;
+  top:60px;
+  width:200px;
+  height:200px;
+  border-radius: 100px;
   display: block;
   text-align: center;
   margin:0 auto;
@@ -2743,12 +2787,26 @@ svg {
   animation:rotate2 2s cubic-bezier(0.26, 1.36, 0.74,-0.29) infinite;
 }
 @keyframes rotate{
-  0%{transform:rotateZ(-360deg)}
-  100%{transform:rotateZ(0deg)}
+  0%{
+    -webkit-transform:rotateZ(-360deg);;
+    transform:rotateZ(-360deg);;
+  }
+
+  100%{
+    -webkit-transform:rotateZ(0deg);;
+      transform:rotateZ(0deg);;
+    }
 }
 @keyframes rotate2{
-  0%{transform:rotateZ(360deg)}
-  100%{transform:rotateZ(0deg)}
+  0%{
+    -webkit-transform:rotateZ(-360deg);;
+    transform:rotateZ(-360deg);;
+  }
+
+  100%{
+    -webkit-transform:rotateZ(0deg);
+      transform:rotateZ(0deg);
+    }
 }
 #text{
   color:white;
@@ -2855,9 +2913,11 @@ svg {
 
 @keyframes down {
   0% {
+    -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
   50% {
+    -webkit-transform: translate3d(0,0,0)  scaleX(1);
     transform: translate3d(0,0,0)  scaleX(1);
   }
   75% {
@@ -2962,4 +3022,11 @@ svg {
 .top-link {
   bottom: -12%;
   left: 83%;
+}
+
+.wa-icon{
+  color:green;
+}
+.wa-no{
+  color:green;
 }
