@@ -25,6 +25,8 @@ p_1=document.querySelector("#p-btn1");
 p_2=document.querySelector("#p-btn2");
 p_3=document.querySelector("#p-btn3");
 
+
+
 p_img1=  document.querySelectorAll(".prize-img")[0];
 p_img2=  document.querySelectorAll(".prize-img")[1];
 p_img3=  document.querySelectorAll(".prize-img")[2];
@@ -43,6 +45,7 @@ p_1.addEventListener("click",function(){
     p_img1.style.display="none";
     console.log("clicked");
     p_value1.style.display="block";
+    p_1.textContent="UntamedDragon"
     p_img2.style.display="block";
     p_value2.style.display="none";
      p_img3.style.display="block";
@@ -54,6 +57,7 @@ p_1.addEventListener("click",function(){
   else{
         p_img1.style.display="block";
             p_value1.style.display="none";
+            p_1.textContent="WINNER"
 
 
   }
@@ -66,6 +70,7 @@ p_2.addEventListener("click",function(){
     p_img2.style.display="none";
     console.log("clicked");
     p_value2.style.display="block";
+    p_2.textContent="AIDER"
     p_img1.style.display="block";
     p_value1.style.display="none";
      p_img3.style.display="block";
@@ -76,6 +81,7 @@ p_2.addEventListener("click",function(){
   else{
         p_img2.style.display="block";
             p_value2.style.display="none";
+            p_2.textContent="RUNNER-UP"
 
 
   }
@@ -88,6 +94,7 @@ p_3.addEventListener("click",function(){
     p_img3.style.display="none";
     console.log("clicked");
     p_value3.style.display="block";
+    p_3.textContent="noob_master"
     p_img2.style.display="block";
     p_value2.style.display="none";
      p_img1.style.display="block";
@@ -98,6 +105,7 @@ p_3.addEventListener("click",function(){
   else{
         p_img3.style.display="block";
             p_value3.style.display="none";
+            p_3.textContent="noob_master"
 
 
   }
