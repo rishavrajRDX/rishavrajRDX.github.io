@@ -370,7 +370,7 @@ border-bottom:1px solid rgba(0,0,0,0.2);
   top:200px;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
   position: relative;
   opacity:1;
   background-attachment: fixed;
@@ -402,6 +402,13 @@ border-bottom:1px solid rgba(0,0,0,0.2);
   position:relative;
   top:-10px;
 }
+.bgimg-4{
+  background:black;
+  min-height: 400px;
+  position:relative;
+  top:-10px;
+}
+
 
 
 .caption {
@@ -657,7 +664,7 @@ h3 {
  /* height:500px;*/
   width:100%;
   position: relative;
-  top:-600px;
+  top:00px;
   background: #1d2951;
   text-align: ;
 }
@@ -2695,6 +2702,20 @@ svg {
   box-shadow: -1rem 0 3rem #000;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
+}
+.card-result{
+    background: black;
+  cursor: crosshair;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  width: 100%;
+  
+  box-shadow: -1rem 0 3rem #000;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+
 }
 .cardBox-prize .card-prize:hover{
   -webkit-animation:scale(1.1);
