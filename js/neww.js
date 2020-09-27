@@ -105,7 +105,7 @@ p_3.addEventListener("click",function(){
   else{
         p_img3.style.display="block";
             p_value3.style.display="none";
-            p_3.textContent="noob_master"
+            p_3.textContent="BEST MECH-HACK"
 
 
   }
